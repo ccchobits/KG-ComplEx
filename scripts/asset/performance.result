@@ -1,0 +1,90 @@
+2020-10-17 02:06:12|model:ComplEx|bern:False|bs:4096 |dataset:WN18 |debug:False|dim:32 |dropout:0.0  |epochs:1000|init_lr:0.01|kernel:1    |loss:margin|lr_decay:1.1|margin:1.0|n_filter:64   |neg_ratio:1    |norm:1|reg:0.0  |hidden:100  |
+                             mrr  mean rank   hit10
+tail: raw ranking       0.571973        491  81.36%
+tail: filtered ranking  0.904320        478  94.26%
+head: raw ranking       0.571973        485  80.36%
+head: filtered ranking  0.904320        470  94.22%
+2020-10-17 02:42:46|model:ComplEx|bern:False|bs:4096 |dataset:WN18 |debug:False|dim:32 |dropout:0.0  |epochs:1000|init_lr:0.01|kernel:1    |loss:margin|lr_decay:1.1|margin:1.0|n_filter:10   |neg_ratio:1    |norm:2|reg:0.0  |hidden:100  |
+                             mrr  mean rank   hit10
+tail: raw ranking       0.573694        453  81.50%
+tail: filtered ranking  0.905180        439  94.26%
+head: raw ranking       0.573694        449  80.34%
+head: filtered ranking  0.905180        435  94.14%
+2020-10-17 02:50:41|model:ComplEx|bern:False|bs:4096 |dataset:WN18 |debug:False|dim:64 |dropout:0.0  |epochs:1000|init_lr:0.01|kernel:1    |loss:margin|lr_decay:1.1|margin:1.0|n_filter:10   |neg_ratio:1    |norm:2|reg:0.0  |hidden:100  |
+                            mrr  mean rank   hit10
+tail: raw ranking       0.57038        531  80.76%
+tail: filtered ranking  0.90385        517  93.82%
+head: raw ranking       0.57038        541  80.16%
+head: filtered ranking  0.90385        526  93.90%
+2020-10-17 02:58:37|model:ComplEx|bern:False|bs:4096 |dataset:WN18 |debug:False|dim:128|dropout:0.0  |epochs:1000|init_lr:0.01|kernel:1    |loss:margin|lr_decay:1.1|margin:1.0|n_filter:10   |neg_ratio:1    |norm:2|reg:0.0  |hidden:100  |
+                             mrr  mean rank   hit10
+tail: raw ranking       0.564861        520  80.84%
+tail: filtered ranking  0.905595        505  93.96%
+head: raw ranking       0.564861        509  79.82%
+head: filtered ranking  0.905595        493  93.98%
+2020-10-17 03:06:48|model:ComplEx|bern:False|bs:4096 |dataset:WN18 |debug:False|dim:196|dropout:0.0  |epochs:1000|init_lr:0.01|kernel:1    |loss:margin|lr_decay:1.1|margin:1.0|n_filter:10   |neg_ratio:1    |norm:2|reg:0.0  |hidden:100  |
+                             mrr  mean rank   hit10
+tail: raw ranking       0.565518        532  80.94%
+tail: filtered ranking  0.908720        518  94.12%
+head: raw ranking       0.565518        525  80.04%
+head: filtered ranking  0.908720        509  94.20%
+2020-10-17 03:14:25|model:ComplEx|bern:False|bs:4096 |dataset:WN18 |debug:False|dim:64 |dropout:0.1  |epochs:1000|init_lr:0.01|kernel:1    |loss:margin|lr_decay:1.1|margin:1.0|n_filter:10   |neg_ratio:1    |norm:2|reg:0.0  |hidden:100  |
+                             mrr  mean rank   hit10
+tail: raw ranking       0.581033        424  81.90%
+tail: filtered ranking  0.925767        411  94.88%
+head: raw ranking       0.581033        422  80.86%
+head: filtered ranking  0.925767        407  94.76%
+2020-10-17 03:21:55|model:ComplEx|bern:False|bs:4096 |dataset:WN18 |debug:False|dim:64 |dropout:0.2  |epochs:1000|init_lr:0.01|kernel:1    |loss:margin|lr_decay:1.1|margin:1.0|n_filter:10   |neg_ratio:1    |norm:2|reg:0.0  |hidden:100  |
+                             mrr  mean rank   hit10
+tail: raw ranking       0.580092        360  81.78%
+tail: filtered ranking  0.926414        346  95.08%
+head: raw ranking       0.580092        348  80.70%
+head: filtered ranking  0.926414        333  95.10%
+2020-10-17 03:29:50|model:ComplEx|bern:False|bs:4096 |dataset:WN18 |debug:False|dim:64 |dropout:0.3  |epochs:1000|init_lr:0.01|kernel:1    |loss:margin|lr_decay:1.1|margin:1.0|n_filter:10   |neg_ratio:1    |norm:2|reg:0.0  |hidden:100  |
+                             mrr  mean rank   hit10
+tail: raw ranking       0.573063        460  81.08%
+tail: filtered ranking  0.908703        446  94.36%
+head: raw ranking       0.573063        452  79.98%
+head: filtered ranking  0.908703        436  94.42%
+2020-10-17 03:37:25|model:ComplEx|bern:False|bs:4096 |dataset:WN18 |debug:False|dim:64 |dropout:0.4  |epochs:1000|init_lr:0.01|kernel:1    |loss:margin|lr_decay:1.1|margin:1.0|n_filter:10   |neg_ratio:1    |norm:2|reg:0.0  |hidden:100  |
+                             mrr  mean rank   hit10
+tail: raw ranking       0.563725        407  80.90%
+tail: filtered ranking  0.877689        393  93.02%
+head: raw ranking       0.563725        396  79.18%
+head: filtered ranking  0.877689        380  92.52%
+2020-10-17 11:17:59|model:ComplEx|bern:False|bs:4096 |dataset:WN18 |debug:False|dim:32 |dropout:0.1  |epochs:1000|init_lr:0.01|kernel:1    |loss:margin|lr_decay:1.1|margin:1.0|n_filter:10   |neg_ratio:1    |norm:2|reg:0.0  |hidden:100  |
+                             mrr  mean rank   hit10
+tail: raw ranking       0.574128        518  81.26%
+tail: filtered ranking  0.908442        504  94.36%
+head: raw ranking       0.574128        509  79.94%
+head: filtered ranking  0.908442        495  94.34%
+2020-10-17 11:41:42|model:ComplEx|bern:False|bs:4096 |dataset:WN18 |debug:False|dim:32 |dropout:0.15 |epochs:1000|init_lr:0.01|kernel:1    |loss:margin|lr_decay:1.1|margin:1.0|n_filter:10   |neg_ratio:1    |norm:2|reg:0.0  |hidden:100  |
+                             mrr  mean rank   hit10
+tail: raw ranking       0.571665        462  81.24%
+tail: filtered ranking  0.904175        449  94.24%
+head: raw ranking       0.571665        449  79.86%
+head: filtered ranking  0.904175        434  94.10%
+2020-10-17 12:06:06|model:ComplEx|bern:False|bs:4096 |dataset:WN18 |debug:False|dim:32 |dropout:0.2  |epochs:1000|init_lr:0.01|kernel:1    |loss:margin|lr_decay:1.1|margin:1.0|n_filter:10   |neg_ratio:1    |norm:2|reg:0.0  |hidden:100  |
+                             mrr  mean rank   hit10
+tail: raw ranking       0.568673        500  80.90%
+tail: filtered ranking  0.886220        487  93.40%
+head: raw ranking       0.568673        490  79.60%
+head: filtered ranking  0.886220        476  93.24%
+2020-10-17 12:28:05|model:ComplEx|bern:False|bs:4096 |dataset:WN18 |debug:False|dim:32 |dropout:0.25 |epochs:1000|init_lr:0.01|kernel:1    |loss:margin|lr_decay:1.1|margin:1.0|n_filter:10   |neg_ratio:1    |norm:2|reg:0.0  |hidden:100  |
+                             mrr  mean rank   hit10
+tail: raw ranking       0.562007        543  80.52%
+tail: filtered ranking  0.876541        529  92.90%
+head: raw ranking       0.562007        531  78.94%
+head: filtered ranking  0.876541        516  92.58%
+2020-10-17 13:15:17|model:ComplEx|bern:False|bs:4096 |dataset:WN18 |debug:False|dim:64 |dropout:0.15 |epochs:1000|init_lr:0.01|kernel:1    |loss:margin|lr_decay:1.1|margin:1.0|n_filter:10   |neg_ratio:1    |norm:2|reg:0.0  |hidden:100  |
+                             mrr  mean rank   hit10
+tail: raw ranking       0.580710        418  81.70%
+tail: filtered ranking  0.926076        405  94.78%
+head: raw ranking       0.580710        426  80.74%
+head: filtered ranking  0.926076        411  94.80%
+2020-10-17 13:38:03|model:ComplEx|bern:False|bs:4096 |dataset:WN18 |debug:False|dim:64 |dropout:0.25 |epochs:1000|init_lr:0.01|kernel:1    |loss:margin|lr_decay:1.1|margin:1.0|n_filter:10   |neg_ratio:1    |norm:2|reg:0.0  |hidden:100  |
+                             mrr  mean rank   hit10
+tail: raw ranking       0.577270        486  81.70%
+tail: filtered ranking  0.920138        472  94.84%
+head: raw ranking       0.577270        470  80.18%
+head: filtered ranking  0.920138        455  94.78%
