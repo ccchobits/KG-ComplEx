@@ -59,8 +59,11 @@ class Reader:
                 train_data_for_stat[train_data_for_stat["relation"] == relation][["head"]].groupby(by=["head"]))
             tail_count = len(
                 train_data_for_stat[train_data_for_stat["relation"] == relation][["tail"]].groupby(by=["tail"]))
-            stat[relation] = np.array([head_count / (head_count + tail_count), tail_count / (head_count + tail_count)])
+            tph = tail_count / head_count
+            hpt = head_count / tail_count
+            stat[relation] = np.array([tph / (tph + hpt), hpt / (tph + hpt)])
         return stat
+
 
     def shuffle(self):
         np.random.permutation(self.indices)
@@ -68,7 +71,7 @@ class Reader:
     def next_batch(self, start, end):
         size = end - start
         pos_samples = self.train_data[self.indices[start: end]]
-        neg_samples = [self.get_neg_samples(pos_samples) for i in range(self.configs.neg_ratio)]
+        neg_samples = [self.get_neg_samples(pos_samples) for _ in range(self.configs.neg_ratio)]
         triplets = np.concatenate([pos_samples] + neg_samples, axis=0)
 
         pos_labels = np.ones(shape=(size,))

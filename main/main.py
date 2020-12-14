@@ -156,22 +156,21 @@ def evaluate():
         ranks.append(rank(triplet))
     ranks = np.array(ranks)
     mean_rank = ranks.mean(axis=0, dtype=np.long)
+    hit1 = np.sum(ranks == 1, axis=0) / len(ranks)
+    hit3 = np.sum(ranks <= 3, axis=0) / len(ranks)
     hit10 = np.sum(ranks <= 10, axis=0) / len(ranks)
     mrr_sum = (1. / ranks).sum(axis=0)
     mrr = np.tile(np.array([mrr_sum[0] + mrr_sum[2], mrr_sum[1] + mrr_sum[3]]) / (2 * len(ranks)), 2)
-    result = pd.DataFrame({"mrr": mrr, "mean rank": mean_rank, "hit10": hit10},
-                          index=["tail: raw ranking", "tail: filtered ranking", "head: raw ranking", "head: filtered ranking"])
-    result["hit10"] = result["hit10"].apply(lambda x: "%.2f%%" % (x * 100))
-    ranks = pd.DataFrame(ranks, columns=["tail:raw", "tail:filtered", "head:raw", "head:filtered"])
-    return ranks, result
+    perf = {"mrr": mrr, "mr": mean_rank, "hit1": hit1, "hit3": hit3, "hit10": hit10}
+    return ranks, perf
 
 
 model.eval()
-ranks, result = evaluate()
+ranks, perf = evaluate()
 
 writer = Writer(configs)
 logger = Logger(configs)
-writer.write(result)
+writer.write(perf)
 
 if configs.log:
     logger.write(ranks)
